@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name=viewport content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/scaffold.css">
+    </head>
+    <body>
+
+    <div id="site-root" style="opacity:0">
+        <div class="site-parent">
+        <div class="site-child">
+            <div class="col-phone-4 col-tablet-12 col-laptop-2 col-desktop-6">
+                <section class="column-content">
+                    <nav class="navigation">
+                        <ul>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a class="model-underline" href=""><span>Settings</span></a></li>
+                        </ul>
+                    </nav>
+                      <nav class="navigation">
+                        <ul class="state-stacked">
+                        <li><a href="">Work</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a class="model-underline" href=""><span>Settings</span></a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <div class="col-phone-4 col-tablet-12 col-laptop-10 col-desktop-6">
+                <section class="column-content">
+                     <div class="navigation-tabs">
+                        <ul>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a class="model-underline" href=""><span>Settings</span></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+              <div class="col-phone-4 col-tablet-12 col-laptop-12 col-desktop-6">
+                <section class="column-content">
+                    <div class="navigation-tabs">
+                        <ul class="state-stacked">
+                        <li><a href="">Work</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a class="model-underline" href=""><span>Settings</span></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer id="site-footer"></footer>
+
+    <script src="js/application.development.js"></script>
+    <script>
+    run = function(){
+
+    animator = new AnimationArchitect
+    animator.create( 'fade-in', '#site-root', 1000, { opacity: 1 }, 'linear', function(){ console.log( 'Complete' )} )
+    animator.animate( 'fade-in' )
+
+    }
+
+    $( document ).on( 'ready', run );
+
+    
+
+
+    </script>
+    </body>
+</html>

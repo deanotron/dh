@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/scaffold.css">
+    </head>
+    <body>
+    <a href="" class="button model-natural"><span>Button</span></a>
+    <a href="" class="button model-text"><span>Button</span></a>
+    <a href="" class="button model-natural state-disabled"><span>Button</span></a>
+
+    <div class="field-container">
+    <label for="text">Text Input Normal</label>
+    <input type="text" class="input-taxonomy model-text" />
+    </div>
+    <div class="field-container">
+    <label for="text">Text Input Disabled</label>
+    <input type="text" class="model-text state-disabled" disabled />
+    </div>
+    <div class="field-container">
+    <label for="text">Text Input Error</label>
+    <input type="text" class="model-text state-error"/>
+    </div>
+    <div class="field-container">
+    <label for="text">Text Input Success</label>
+    <input type="text" class="model-text state-success"/>
+    </div>
+    <div class="field-container">
+    <label for="select">Select</label>
+    <select>
+    <optgroup label="Option Group">
+    <option>Option One</option>
+    <option>Option Two</option>
+    <option>Option Three</option>
+    </optgroup>
+    </select>
+    </div>
+    <div class="field-container">
+    <label for="text"><input type="checkbox" class="model-checkbox"/>Checkbox</label>
+    <label for="text"><input type="radio" class="model-radio"/>Radio</label>
+    </div>
+    <div class="field-container">
+    <label for="text">Color Input</label>
+    <input type="color" class="model-color" value=""/>
+    </div>
+    <div class="field-container">
+    <label for="text">Number Input</label>
+    <input type="number" class="model-number" min="0" max="5"/>
+    </div>
+    <div class="field-container">
+    <label for="text">Range</label>
+    <input type="range" class="model-range" />
+    </div>
+    <div class="field-container">
+    <label for="text">Date</label>
+    <input type="date" class="model-date" />
+    </div>
+
+    <div class="vcard">
+    <div class="company">Utility</div>
+    <div class="address">
+        <div class="street-address">1234 Main St.</div>
+        <span class="locality">Anywhere</span>,
+        <span class="postal-code">101010</span>,
+        <abbr class="region" title="British Columbia">BC</abbr>
+        <div class="country-name">Canada</div>
+    </div>
+    <div class="tel">+1.888.123.4567</div>
+    </div>
+
+    <div class="header-group">
+    <h2>This is the heading group's main heading</h2>
+    <h3>This is the heading group's subheading</h3>
+    </div>
+
+    <div class="items"></div>    
+
+    <script src="js/vendor/jquery-2.0.3.min.js"></script>
+    <script src="js/vendor/underscore-min.js"></script>
+    <script src="js/app.js"></script>
+<!--  // <script src="js/subscribe.publish.js"></script> -->
+    </body>
+</html>

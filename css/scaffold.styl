@@ -1,0 +1,1312 @@
+//###############################################################
+// DEFAULTS 								  	   	   		   ##
+//###############################################################
+
+//package-url = '/Users/claytonmisura/Documents/Projects/Git Projects/Stylus-Bootstrap'
+package-url = '/Users/deandev/Documents/workspace/UTL-Stylus-Bootstrap'     
+
+
+@import package-url + '/css/' + variables
+@import package-url + '/css/' + functions
+@import package-url + '/css/' + mixins
+@import import-fonts  
+@import package-url + '/css/' + atoms
+@import package-url + '/css/' + molecules
+@import package-url + '/css/' + organisms
+@import package-url + '/css/' + grid
+
+//############################################################### 
+// OVERRIDES 								  	   	   		   ##        
+//###############################################################
+
+font-family-apercu 		= 'Apercu Regular', Calibri, sans-serif
+font-family-serif 		= 'Georgia', serif
+font-color-primary 		= rgb( 0, 0, 0 )
+font-color-secondary	= rgb( 0, 0, 0 )
+/*link-color-primary 		= rgb( 0, 0, 0 )*/
+site-color-primary 		= rgb(184, 182, 189)
+site-color-tertiary		= white  // rgb( 255, 153, 105 )
+site-color-quaternary 	= white // rgb( 0, 0, 0 )
+
+// # WEBKIT SMOOTHING   
+
+body
+select 
+input.input-taxonomy		
+input::-webkit-input-placeholder
+input:focus::-webkit-input-placeholder
+textarea::-webkit-input-placeholder
+textarea:focus::-webkit-input-placeholder
+	-webkit-font-smoothing	antialiased
+	-moz-font-smoothing antialiased
+
+.left 
+	float 				left 
+
+.right
+	float 				right 
+
+i.icon
+i.icon2x
+i.icon3x
+	font-style 			normal 
+
+
+a
+	color: font-color-primary
+	border-bottom: 2px solid font-color-primary
+	
+a:hover
+	border-color: transparent
+
+
+a.button
+	border-radius( 5px )
+
+a.button.model-natural 
+	background 			transparent
+	border-color 		site-color-tertiary	 /* Add to colors */
+	border-style 		solid
+	color 				@border-color
+	px-rem( border-width, 2 )
+	px-rem( font-size, 20 )
+
+a.button.model-natural:hover
+	background 			site-color-tertiary	 		
+	border-color 		transparent
+	color 				font-color-primary !important 
+
+a.button.model-fixed
+	background 			site-color-tertiary	
+	border-color 		transparent /* Add to colors */
+	border-style 		solid
+	color 				font-color-primary
+	px-rem( border-width, 2 )  	
+	px-rem( font-size, 20 )
+	px-rem( line-height, 41 )
+	px-rem( height, 44 )
+
+a.button.model-fixed:hover
+	background 			transparent
+	border-color 		site-color-tertiary	 /* Add to colors */
+	border-style 		solid
+	color 				@border-color
+	px-rem( border-width, 2 )  
+	
+a.normal
+	border-bottom 		2px solid site-color-secondary	 /* Add to colors */
+	color 				font-color-secondary
+	
+a.normal:hover
+	border-color 		transparent	 /* Add to colors */
+	
+body
+#site-header
+#site-footer
+	background-color 	site-color-primary
+	color 				font-color-secondary
+
+body
+	font-family 		font-family-serif
+	font-size-adjust 	0.508
+	font-weight 		normal 
+	font-style 			normal
+
+#site-header
+	background 			transparent 
+	transition( all 0.5s linear )
+
+.site-footer-stamp
+.site-footer-trademark
+	position 			absolute
+	px-rem( line-height, value-footer-height )
+
+.site-footer-stamp
+.site-footer-trademark
+.site-footer-stamp a.buton
+.site-footer-trademark a.buton
+	color 				font-color-secondary
+	px-rem( font-size, 20 )
+
+.site-footer-stamp a.button
+.site-footer-trademark a.button
+	color 				font-color-secondary
+	
+.site-footer-stamp a.button span
+.site-footer-trademark a.button span
+	box-shadow( 0 2px 0 font-color-secondary )
+
+#site-root
+	padding-top 		0
+	opacity 			1
+	transition( opacity 0.5s linear )
+	
+#consulting-root
+	padding-top 		200px
+	opacity 			1
+	transition( opacity 0.5s linear )
+
+#site-header.is-scrolling
+	background 			site-color-primary 	
+
+.navigation li a
+#site-header a.button span 
+	px-rem( font-size, 24 )
+
+#site-header a.button.model-fixed
+	display 			inline-block
+	float 				right
+	px-rem( margin, 24 15 0 0 )
+
+#site-header a.button.model-fixed 
+#site-header a.button.model-fixed
+	background 			transparent
+	border 				2px solid site-color-tertiary	
+
+#site-header a#menu-home
+#site-header a#menu-contact
+	color 				site-color-tertiary 
+	
+#site-header a#menu-home span
+#site-header a#menu-contact span
+	box-shadow( 0 2px 0 transparent )
+ 
+ #site-header a#menu-home:hover span
+ #site-header a#menu-contact:hover span
+	box-shadow( 0 2px 0 site-color-tertiary )
+	
+// #site-header a.button.model-fixed:hover span  
+// #site-header a.button.model-fixed:focus span
+
+.navigation
+	display 			inline
+
+.navigation.left 
+	px-rem( margin-left, 52 )
+
+.navigation.right
+	px-rem( margin-right, 16 )
+
+.navigation li a
+	color 				font-color-secondary 
+	px-rem( height, value-header-height )
+
+.navigation ul 
+.navigation ul li
+.navigation ul li a
+	height 				100%
+
+.navigation ul li a
+	px-rem( padding, 0 12 )
+	px-rem( line-height, value-header-height ) 	
+	border: none
+
+.navigation li a.model-underline:hover span 
+.navigation li a.model-underline:focus span
+.navigation li.state-active a.model-underline span 
+	box-shadow( 0 2px 0 font-color-secondary )
+
+
+// this is the menu used for the external sites (terms, install_guide etc.)
+.single-menu
+	padding 			33px 0
+	font-size 			24px
+	position 			absolute
+	px-rem(left, 53)
+
+// .site-child
+// 	border-color  		site-color-secondary
+// 	border-style 		solid
+// 	px-rem( border-width, 2)
+
+//###############################################################
+// EXTEND 								  	   	   			   ##
+//###############################################################
+
+// 01 UTILITIES
+
+.notification
+	color 				rgb(255, 31, 0)
+	px-rem( font-size, 22)
+
+value-arrow-size 		= 24
+
+/* Required for Down Triangle */
+.arrow-down:before
+.arrow-down:after 
+	content		 		''
+	position			absolute
+	width		 		0
+	height		 		0
+	border-style		solid
+	border-color		transparent
+	border-bottom		0
+	z-index 			1000
+
+/* Stroke */
+.arrow-down:before
+	left 				50% 
+	px-rem( bottom, -( value-arrow-size ) )
+	px-rem( margin-left, -( value-arrow-size ) )	
+	border-top-color 	site-color-primary
+	px-rem( border-width, value-arrow-size )
+
+/* Fill */
+.arrow-down:after 
+	left 				50%
+	px-rem( bottom, -( value-arrow-size - 1 ) )
+	px-rem( margin-left, -( value-arrow-size - 1 ) )
+	border-top-color 	site-color-primary
+	px-rem( border-width, value-arrow-size - 1 )
+
+	
+// 01 PAGE // SPLASH
+
+value-input-height  = 64
+value-button-border = 2
+
+.product-info
+	overflow 			hidden
+	text-align			center
+	px-rem( padding, 20 )
+	// px-rem( margin-top, 98 )
+	
+.product-name
+.product-creator
+	color 				font-color-secondary
+	line-height 		1
+
+.product-name
+	display 			inline-block
+	px-rem( margin-bottom, 6 )	
+
+.product-name span 
+	color 				site-color-tertiary
+
+.product-creator
+	px-rem( font-size, 40 )
+
+textarea.input-taxonomy	
+input.input-taxonomy
+.subscribe a.button
+	px-rem( font-size, 20 )
+	px-rem( height, value-input-height )
+	transition( all 0.25s ease )
+	border-radius( 0 )	
+
+input.input-taxonomy
+input.input-taxonomy:focus
+input.input-taxonomy::-webkit-input-placeholder
+textarea.input-taxonomy
+textarea.input-taxonomy:focus
+textarea.input-taxonomy::-webkit-input-placeholder
+	color 				font-color-secondary 
+	transition( all 0.25s ease )		
+	
+input.input-taxonomy
+textarea.input-taxonomy	
+	color 				font-color-secondary
+	background-color 	rgba( 0, 0, 0, 0.05 )
+
+input.input-taxonomy:focus
+textarea.input-taxonomy:focus
+	outline 			none
+
+input.input-taxonomy:focus::-webkit-input-placeholder
+textarea.input-taxonomy:focus::-webkit-input-placeholder
+	color 				transparent
+
+input.input-taxonomy
+textarea.input-taxonomy	
+	px-rem( border, value-button-border solid font-color-secondary )
+	px-rem( padding, 0 12 )
+
+textarea.input-taxonomy	
+	px-rem( padding, 18 12 )
+	px-rem( height, value-input-height * 3 )
+
+.field-container.personal-info .model-text
+	px-rem( margin-bottom, 16 ) 
+
+h1.field-title
+	px-rem( font-size, 40 )
+	px-rem( margin-bottom, 32 )
+
+// .field-container.personal-info
+// 	px-rem( margin-top, 48 )
+
+.field-container.credit-info
+	px-rem( margin-top, 32 )
+
+.subscribe a.button
+	display 			block
+	background 			transparent 
+	color 				font-color-secondary 
+	px-rem( border, value-button-border solid font-color-secondary )
+	px-rem( line-height, ( value-input-height - ( value-button-border * 2 ) ) )
+	border-radius( 0 )
+
+.subscribe a.button:hover
+.subscribe a.button:focus
+	px-rem( border, value-button-border solid font-color-secondary )
+	color 				font-color-primary
+	background-color 	site-color-secondary
+
+.product-container
+	px-rem( margin-top, 22 )
+	px-rem( padding, 0 0 32 )
+
+.product-container:last-of-type
+	border-right 		0 
+
+
+
+
+
+
+//    CONSULTING SITE
+
+.title
+	font-size:  32px
+	line-height: 1.5
+
+
+#site-header
+	background 			site-color-primary
+	
+.tech-container
+	color  site-color-tertiary
+	font-size: 32px
+	line-height: 1.5
+	
+#menu-twitter
+#menu-linkedin
+	font-family: sans-serif;
+	color: site-color-tertiary;
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	padding: 0px;
+	font-size: 18px;
+	line-height: 40px;
+
+
+
+
+
+
+
+
+
+
+// 04 MODULE // RESPONSIVE MENU
+
+// Module Specific Variables
+
+nav-icon-height 		= 18 
+nav-icon-width 			= 24
+nav-icon-border 		= 2
+
+// Module Styles
+
+#site-header .row 
+	height 				100%
+
+ #site-header .row:before 
+	content 			''
+	display 			inline-block
+	height 				100%
+	vertical-align 		middle
+
+.navigation 
+	display 			inline-block
+	vertical-align 		middle
+
+.navigation.state-collapsed
+	position 			absolute
+	overflow 			visible	
+	top 				50%
+	right 				0
+	px-rem( width, nav-icon-width )
+	px-rem( margin-top, -( nav-icon-height / 2 ) )
+	px-rem( margin-right, 32 ) /* Row padding */
+	px-rem( height, nav-icon-height ) 
+
+.navigation.state-collapsed a.icon
+	position 			relative
+	px-rem( height, nav-icon-height )
+
+.navigation.state-collapsed a.icon
+.navigation.state-collapsed a.icon span
+.navigation.state-collapsed a.icon span:before
+	display 			block
+	px-rem( width, nav-icon-width )
+
+.navigation.state-collapsed a.icon span
+.navigation.state-collapsed a.icon span:before
+	left 				0
+	position 			absolute
+
+.navigation.state-collapsed a.icon span
+	border-color 		site-color-primary
+	border-style 		solid
+	px-rem( border-width, nav-icon-border 0 )
+	height 				100%
+
+.navigation.state-collapsed a.icon span:before
+	background 			site-color-primary
+	content 			''	
+	top 				50%
+	px-rem( height, nav-icon-border )
+	px-rem( margin-top, -( nav-icon-border / 2 ) )
+
+.navigation.state-collapsed ul
+	background 			rgb( 248, 248, 248 )
+	border 				1px solid site-color-primary
+	display 			none
+	position 			absolute
+	right 				0
+	width 				350px
+	// px-rem( padding-right, 64 ) /* Row padding * 2 */
+	px-rem( margin-top, ( nav-icon-height / 2 ) )
+
+.navigation.state-collapsed ul li
+	border-bottom 		1px solid site-color-primary
+	display 			block
+	float 				none
+
+.navigation.state-collapsed ul li:last-child
+	border-bottom 		0
+
+.navigation.state-collapsed ul.state-hidden
+	display 			none
+
+.navigation.state-collapsed ul.state-visible
+	display 			block
+
+// 05 MODULE // FOOTER
+
+.contact p
+	margin-top 			0
+
+.team-header
+.team-body
+.contact-header
+.contact-body
+	display 			block 		
+	overflow 			hidden
+	text-align 			center
+	width 				100%
+
+.team-header
+.contact-header
+	px-rem( padding, 134 0 22 )
+
+.contact-header
+	px-rem( padding, 98 0 22 )
+	
+.team-header h2
+.contact-header h2
+	px-rem( font-size, 56 )
+
+.team-member-name
+.team-member-title
+.team-member-email
+.contact-item-local
+.contact-item-national
+.contact-item-email	
+	px-rem( font-size, 28 )
+
+.team-member-name
+	color 				font-color-secondary
+
+.team-member-title
+.team-member-email
+.contact-item-local
+.contact-item-national
+.contact-item-email	
+	color 				site-color-quaternary
+	
+.team-member-name
+.team-member-title
+.contact-item-local
+.contact-item-national
+	px-rem( margin-bottom, 8 )	
+
+.model-underline span
+.team-member-email.model-underline span
+.contact-item-email.model-underline span
+	box-shadow( 0 1px 0 site-color-quaternary )
+
+.navigation .model-underline span	
+	box-shadow( 0 1px 0 transparent )
+	
+#diy-notice
+	margin-bottom 	0px
+	
+.conditions-container
+	margin-top 		18px
+	color 			site-color-quaternary
+
+
+//###############################################################
+// STREAM							  	   	   			   	   ##
+//###############################################################
+
+.stream-container
+	height 				100%
+
+.stream-items
+.stream-item 
+.stream-dots 
+.stream-dot
+	position 			relative
+
+.stream-items
+.stream-dots
+	opacity 			0
+	
+.stream-items
+	display 			inline-block
+	max-height 			100%
+	width 				100%
+	transition( all 0.3s ease-in  )
+
+.stream-item
+	display 			inline-block
+	float 				left 
+	overflow			hidden
+	text-align 		 	center
+
+.stream-item
+	px-rem( min-height, 100 )	
+
+.stream-dots 
+	px-rem( margin, 128 auto 44 )
+	overflow 			hidden 
+	text-align 			center 
+	px-rem( height, 20 )
+
+.stream-dot
+	display 			inline-block
+	height 				100%
+	top 				0 
+	vertical-align 		top 
+	px-rem( margin, 0 5 )
+	px-rem( width, 20 )				
+
+.stream-dot span
+	border-radius( 1000px )				
+	border 				2px solid site-color-secondary
+	display 			block
+	height 				100%
+	width 				100% 
+	
+// STATES
+.stream-container.state-centered
+	margin 				0 auto 
+
+.stream-dot.state-active 
+	px-rem( padding, 3 )
+
+.stream-dot.state-active span 
+	border 				0
+	background 			site-color-secondary
+
+
+//###############################################################
+// DIY ACCOUNT SECTION										   ##
+//############################################################### 
+
+.field-container p
+	text-align 			left
+	margin-bottom 		20px
+	font-size 			20px
+	line-height 		26px
+	
+.field-container.small-text p
+	font-size 			17px
+	
+.highlight
+.field-container .highlight
+	color 				site-color-tertiary
+
+
+
+
+
+
+// MISC  ----
+
+
+.column-content
+	px-rem( padding, 8 )
+
+#site-header .row
+.slat .row
+	px-rem( padding, 0 32 )
+
+// # Everything above should target small / extra-small screens
+slat-header-height 		= 144	
+slat-header-footer 	 	= 144  
+
+
+//   Terms row
+.row.terms
+	text-align 			center
+	font-size 			20px
+	margin-bottom 		100px
+	
+.row.naked-row
+	width				960px
+	
+
+#verification-scrim
+	position 			fixed
+	width 				100%
+	height 				100%
+	top 				0
+	left 				0
+	z-index 			10000000
+	text-align 			center
+	background 			rgba(0,0,0,0.9)
+	
+#verification-scrim > span
+	font-size 			30px
+	top 				50%
+	margin-top 			-15px
+	position 			absolute
+	width				300px
+	left				50%
+	margin-left			-150px
+	
+	
+#submit
+	margin-top 			20px
+	width 				100%
+
+
+.site-footer-terms
+	left				50%
+	top 				24px
+	position 			absolute
+	margin-left			-150px
+	width 				300px
+	text-align 			center
+	font-size 			20px
+	
+	
+	
+	
+	
+#scrim
+	background: black
+	position: fixed;
+	z-index: 1000000;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	cursor: s-resize;
+	transition( opacity 0.3s ease-in )
+	
+#scrim img
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 50px;
+	max-height: 100%;
+	
+	
+	
+
+
+a.button.site-demo
+	border-color 			font-color-primary
+	color 					font-color-primary
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+//###############################################################
+// DEVICE SPECIFIC										  	   ##
+//############################################################### 
+
+@media device-width-phone-both
+	// #START BONES
+
+	#site-root 
+		padding-top 		0
+
+	.site-parent 
+		px-rem( padding, 108 0 32 )
+		margin 				0
+
+	.site-child
+	.row
+		px-rem( max-width, 960 )
+
+	#site-header .row
+		px-rem( padding, 0 16 )
+		
+	.navigation
+		display 			inline
+		float 				left
+		px-rem( margin-left, 20 )
+
+	.navigation ul 
+		opacity 			0 
+		visibility 			hidden 
+
+	.browser-container
+		px-rem( margin-top, -108 )
+
+	.browser-frame 
+		padding 			0
+
+	.browser-frame
+	.browser-url-bar
+	.browser-footer-bar
+	.browser-url-bar .dot 
+		border-color 		transparent 
+
+	.site-bulletin-credits
+		left 				0
+		px-rem( bottom, -204px )
+		px-rem( padding, 18 24 20 )
+		px-rem( width, 640 )
+		right 				0 
+		max-width 			100%
+
+	.site-bulletin-image
+		background 			none 
+		height 				100%
+		width 				100%
+
+	// # START NAV
+	.navigation.state-collapsed
+		margin-left 		0 	
+		px-rem( left, 20 )
+		
+	.navigation.state-collapsed a.icon span
+		border-color 		site-color-secondary
+	
+	.navigation.state-collapsed a.icon span:before
+		background 			site-color-secondary
+
+	.navigation.state-collapsed
+	.navigation.state-collapsed ul
+		height 				auto
+
+	.navigation.state-collapsed ul
+		background 			site-color-primary
+		border-style 		solid 
+		border-color 		site-color-secondary
+		display 			none
+		position 			absolute
+		width 				100%
+		px-rem( border-width, 2 )
+		px-rem( left, -20 )
+		px-rem( top, ( 64 - nav-icon-height ) )
+		px-rem( min-width, 300 )
+		px-rem( margin-top, ( nav-icon-height / 2 ) )
+
+	.navigation.state-collapsed ul li
+		border-bottom 1px solid site-color-secondary
+
+	.navigation.state-collapsed  ul li a
+		px-rem( line-height, 44 ) 
+	
+	.feature-image-container
+	.feature-image-container .feature-image 
+		border 				0 
+
+	// # START STREAM
+	.stream-container
+		padding-top 		0
+
+	#slat-1.state-expanded .slat-body
+		px-rem( padding, 0 16 )
+
+	.slat-footer
+		px-rem( padding-top, 24 )
+
+	.stream-item .date-month .column-content
+	.stream-item .date-year .column-content
+		padding 			0	
+	
+	.product-container
+		px-rem( padding, 0 16 8 )
+
+	.product-container .product-price
+		px-rem( padding, 24 24 16 16 )
+		text-align 			right 
+		height 				auto !important
+		line-height 		1  	
+
+	.product-container .product-price-arrow 
+		position 			absolute 
+		px-rem( top, 40 )
+		px-rem( right, 16 )
+
+	.product-container.premium .product-price-arrow .icon
+		color 				site-color-tertiary 
+		
+	.product-container .product-price-package
+		border 				0 !important 
+		text-align 			left 
+		px-rem( top, 34 )
+
+	.product-container .product-price
+		letter-spacing		0		
+		px-rem( font-size, 52 )
+
+	.product-price span:before
+		px-rem( top, 12 )
+
+	.product-container .product-price:before
+		position 			relative 
+
+	.product-includes-list.state-hidden
+		display 			none  
+
+	.product-includes-list.state-visible 
+		display 			block  
+
+	.product-container.diy
+		border 				1px solid site-color-secondary
+
+	.product-container.premium
+		border 				1px solid site-color-tertiary
+
+	.product
+		px-rem( margin-top, 32 )
+
+	.product-synopsis
+		px-rem( font-size, 16 )
+		px-rem( margin, 0 0 21 )
+
+	.hero-container	
+	.mobile-demo-container
+		px-rem( padding, 32 0)
+		
+	.hero p
+	.mobile-demo-notice p
+		margin-bottom 		1rem
+		px-rem( font-size, 20 )
+	
+	.product-includes 
+		px-rem( line-height, 28 )
+		px-rem( height, 88 )
+		px-rem( font-size, 20 )
+
+	.product-name
+		px-rem( font-size, 32 )
+		px-rem( line-height, 40 )
+		px-rem( margin-bottom, 12 )
+		px-rem( padding-left, 32 )
+		px-rem( padding-right, 32 )
+
+	.product-info 
+		px-rem( padding, 16 0 0 )
+
+	.product-outline 
+		px-rem( padding, 0 16 )
+
+	.product-outline p 
+		px-rem( padding, 14 28 18 )
+
+	.team-member 
+		px-rem( padding-bottom, 16 )
+
+	.subscribe input.input-taxonomy	
+		border-bottom-width 0
+
+	.slat .row
+		padding 			0
+
+	.slat
+		px-rem(	max-height, slat-header-height )  	/* Animate height : auto, hack */	
+		px-rem( min-height, slat-header-height ) 	/* Need Min-Height For Accordian */
+
+	.slat.state-collapsed
+		px-rem(	max-height, slat-header-height )  
+		
+	.slat-header
+		px-rem( padding, 0 8 )
+		px-rem( height, slat-header-height )
+
+	.slat-header-items 
+		px-rem( height, slat-header-height )
+
+	.slat-footer-items 
+		px-rem( height, ( slat-header-height / 2 ) )
+
+
+	.slat-header-items h3
+		px-rem( font-size, 36 )
+		line-height 		1 
+
+	.slat-header-items a.button
+		margin-top 			0
+		
+	.slat-body
+		px-rem( padding, 0 16 )
+		
+	.slat-body .row
+		px-rem( margin-bottom, 44 )
+
+	.feature-container
+		opacity 			1
+
+	.feature-container.first-child
+	.faq-container.first-child
+	.stream-container
+		px-rem( margin-top, 44 )
+
+	.stream-container
+		px-rem( padding-top, 44 )
+
+	.feature-name
+	.faq-name 
+	.contact-header h2
+		px-rem( font-size, 28 )
+
+	.feature-synopsis
+	.faq-synopsis 
+	.column-content p
+	.column-content a.contact-item-email
+		px-rem( font-size, 20 )
+
+	.feature-synopsis
+		px-rem( margin, 4 0 20 )	
+
+	.faq-synopsis 
+		px-rem( margin, 8 0 0 )	
+
+	.stream-dots
+		px-rem( margin, 64 auto 44px )
+
+	.stream-container
+		position 			relative
+
+	.button.button-checkout.model-natural
+		px-rem( margin-bottom, 24 )
+		
+	.contact-header
+		padding-bottom 		0
+
+	.subscribe
+		px-rem( margin-top, 44 )
+
+	.site-footer-stamp
+	.site-footer-trademark
+		px-rem( bottom, 8 ) 
+		
+	.single-menu
+	.site-footer-stamp
+		px-rem( left, 32 )
+
+	.site-footer-trademark
+		px-rem( right, 32 )
+		
+	.row.naked-row
+		width				auto
+		padding 			0 32px
+
+	.column-content
+		padding-left 		0
+		padding-right  		0
+		
+	#scrim img
+		padding 			2px 0
+		max-height 			100%
+		width 				auto
+		
+
+	column-offset( phone, 12, true )
+	column-offset( phone, 12, false )
+	make-visible( show-for, false, tablet laptop desktop )
+	make-visible( hide-for, true, phone )
+
+// @media device-width-phone-portrait 
+// @media device-width-phone-landscape
+
+@media device-width-tablet-both 
+	
+	#site-root 
+	.site-parent 
+		padding 			0
+		margin 				0
+
+	.site-child
+	.row
+		px-rem( max-width, 960 )
+
+	.site-bulletin-credits
+		background 			site-color-quaternary 
+		left 				0
+		px-rem( bottom, -204px )
+		px-rem( padding, 26 24 28 )
+		px-rem( width, 1200 )
+		right 				0 
+		max-width 			100%
+
+	.browser-container
+		margin-top 			0
+
+	.site-bulletin-image
+		background 			none 
+		height 				100%
+		width 				100%
+
+	.product-synopsis
+		px-rem( font-size, 24 )
+		px-rem( margin, 0 0 36 )
+	
+	.product-includes 
+		px-rem( line-height, 28 )
+		px-rem( height, 88 )
+		px-rem( font-size, 20 )
+
+	.product-name
+		px-rem( font-size, 60 )
+		px-rem( line-height, 72 )
+		px-rem( margin-bottom, 18 )
+
+	.hero-container
+		px-rem( padding, 148 0 154)
+
+	.hero p
+		px-rem( font-size, 32 )
+
+	.stream-item .date-month .column-content
+	.stream-item .date-year .column-content
+		padding 			0
+
+	.team-member 
+		px-rem( margin-bottom, 16 )
+
+	.product-includes-list.state-hidden 
+		opacity 			0 
+		visibility 			hidden 
+
+	.subscribe
+		px-rem( margin-top, 20 )
+
+	.subscribe input.input-taxonomy	
+		border-right-width 	2px
+		
+	.single-menu
+	.site-footer-stamp
+	.site-footer-trademark 
+		px-rem( bottom, 8 )
+
+	.site-footer-stamp
+		px-rem( left, 32 )
+
+	.site-footer-trademark
+		px-rem( right, 32 )
+
+	.col-tablet-push-0
+		margin 				0
+		
+	.row.naked-row
+		width				auto
+		padding 			0 32px
+
+	column-width( tablet, 12 )
+	column-offset( tablet, 12, true )
+	column-offset( tablet, 12, false )
+
+	make-visible( show-for, false, phone laptop desktop )
+	make-visible( hide-for, true,  tablet )
+
+// @media device-width-tablet-portrait   
+// @media device-width-tablet-landscape
+
+
+
+@media device-width-laptop
+
+	.site-parent 
+		padding				0
+		margin 				0
+		// px-rem( margin, 0 50 )
+
+	.site-child
+	.row
+		px-rem( max-width, 960 )
+
+	.navigation ul li:first-child a
+		padding-left 		0
+
+	.browser-container 
+		px-rem( padding, 108 0 )
+
+	.browser-frame
+		px-rem( padding-top, 60 )
+
+	.site-bulletin-image
+		px-rem( max-width, 880 )
+
+	.site-bulletin-credits
+		px-rem( bottom, -96 )
+		px-rem( padding, 16 24 18 )
+		px-rem( max-width, 216 )
+		px-rem( right, 52 )
+
+	.hero p
+		px-rem( font-size, 32 )
+
+
+	.feature-container.first-child
+		px-rem( margin-top, 80 )
+		
+	.feature-name
+	.faq-name 
+		px-rem( font-size, 44 )
+
+	.feature-synopsis
+	.faqx-synopsis
+		px-rem( font-size, 32 )
+
+	// # END SLATS
+
+	.stream-item .date-month .column-content
+		px-rem( padding, 0 8 0 0 )
+
+	.stream-item .date-year .column-content
+		px-rem( padding, 0 0 0 8 )
+
+	.product-name
+		px-rem( font-size, 48 )
+		px-rem( line-height, 60 )
+		px-rem( margin-bottom, 20 )
+
+	.product-info .product-synopsis
+	.product-info .product-demo 
+		px-rem( font-size, 20 )
+
+	.product-info .product-synopsis
+		px-rem( margin-bottom, 24 )
+
+	.subscribe
+		px-rem( margin-top, 20 )
+
+	.subscribe input.input-taxonomy	
+		border-right-width 	0
+
+	.site-footer-stamp
+		px-rem( left, 64 )
+
+	.site-footer-trademark
+		px-rem( right, 64 )
+
+	column-width( laptop, 12 )
+	column-offset( laptop, 12, true )
+	column-offset( laptop, 12, false )
+
+	make-visible( show-for, false, phone tablet desktop)
+	make-visible( hide-for, true, laptop )
+
+
+@media device-width-desktop
+	
+	.site-parent
+		margin 			0 
+		// px-rem( padding, 153 0 188 ) /* 200 */
+		padding 		0
+
+	.site-child
+	.row
+		px-rem( max-width, 1224 )
+
+	#site-header .row
+	.site-child
+		px-rem( padding, 0 64 )
+
+	.column-content
+		px-rem( padding, 8 )
+
+	.navigation ul li:first-child a
+		padding-left 		0
+
+	.browser-container 
+		px-rem( padding, 244 0 )
+
+	.browser-frame
+		px-rem( padding-top, 60 )
+
+	.site-bulletin-image
+		px-rem( max-width, 1600 )
+
+	.site-bulletin-credits
+		px-rem( bottom, -144 )
+		px-rem( padding, 16 24 18 )
+		px-rem( max-width, 304 )
+		px-rem( right, 52 )
+
+
+
+	.stream-item .date-month .column-content
+			px-rem( padding, 0 8 0 0 )
+
+	.stream-item .date-year .column-content
+		px-rem( padding, 0 0 0 8 )
+
+	.product-name
+		px-rem( letter-spacing, -1 )
+		px-rem( font-size, 88 )
+		px-rem( line-height, 104 )
+		px-rem( margin-bottom, 36 )
+
+	.product-info .product-synopsis
+		px-rem( font-size, 32 )
+
+	.product-demo.button.model-natural
+		color 			site-color-tertiary 
+		px-rem( font-size, 32 )
+		px-rem( padding, 16 32 ) 
+
+	.product-info .product-synopsis
+		px-rem( margin-bottom, 62 )
+								
+	.subscribe
+		px-rem( margin-top, 128 )
+
+	.subscribe input.input-taxonomy	
+		border-right-width 	0
+
+	.site-footer-stamp
+		px-rem( left, 64 )
+
+	.site-footer-trademark
+		px-rem( right, 64 )
+
+
+	column-width( desktop, 12 )
+	column-offset( desktop, 12, true )
+	column-offset( desktop, 12, false )
+
+	make-visible( show-for, false, phone tablet laptop )
+	make-visible( hide-for, true,  desktop )
+	
+	
+/*
+ *  Deans addition asdf 
+ */
+input.invalid
+	border-color 		rgb(238, 72, 57)
+	
+input.valid
+	border-color 		rgb(95, 228, 95)

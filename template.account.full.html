@@ -1,0 +1,280 @@
+<!doctype html>
+<html class='no-js'>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name='description' content=''>
+	<meta name=viewport content='width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0' />
+	<meta property="title" content="Folio"/>
+	<meta property="og:title" content="Folio"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="https://folio.utl.io/img/folio_logo.png"/>
+	<meta property="image" content="https://folio.utl.io/img/folio_logo.png"/>
+	<meta property="og:url" content="https://folio.utl.io"/>
+	<meta property="og:description" content="The simple way to create a beautiful portfolio."/>
+	<meta property="description" content="The simple way to create a beautiful portfolio."/>
+	
+	
+	<link href='/css/portal.css' rel='stylesheet' type='text/css'>
+	<!-- <link href="//f.fontdeck.com/s/css/uH5+KWQnibDTJRYggGJ9XZLTAgw/localhost/39545.css" rel="stylesheet" type="text/css" /> -->
+	<script src='/js/vendor/modernizr.custom.48341.js'></script>
+	
+	<!-- fontdeck -->
+	<script type="text/javascript">
+	WebFontConfig = { fontdeck: { id: '39545' } };
+
+	(function() {
+	  var wf = document.createElement('script');
+	  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+	  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	  wf.type = 'text/javascript';
+	  wf.async = 'true';
+	  var s = document.getElementsByTagName('script')[0];
+	  s.parentNode.insertBefore(wf, s);
+	})();
+	</script>
+	
+	
+	
+	<!--  ADDON STYLE FOR account page -->
+	<style>
+		.text-container {
+			width: 480px;
+			margin-left: 240px;
+		}
+	</style>
+</head>
+
+<body class="account-page">
+
+	<header id="site-header" class="state-fixed">
+		<nav class="navigation">
+			<ul>
+				<li class="state-active"><a class="model-underline" href="/"><span>Home</span></a></li>
+			</ul>
+		</nav>
+
+	</header>
+	
+	
+	<div class="row header-row" style="height: 100px;"></div>
+	
+	
+	{% if install_pre %}
+	
+	<div class="row">
+		<div class="text-container">
+			<div style="font-weight:100;font-size:32px;line-height:48px;color:#ffffff;padding-top:39px;padding-bottom:25px;">
+				Thanks for purchasing <span style="color:#e6fa7e;font-weight:100;">Folio Premium</span>. Let's get you setup with a web host that suits your needs.
+			</div>
+			
+			<div style="color:#FFF;font-size:20px;line-height:24px;font-weight:100;border-top:1px solid #959597;padding-top:44px;">
+            	We've provisioned a temporary server for you to begin uploading your content while your server and domain are being setup.  
+            </p>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;background-color:#444;font-family:monospace;font-size:15px;padding:12px;" bg-color:"#444">
+            	<a href="http://foliodemo-001.utl.io/utl-admin" style="color:#e6fa7e;" target="_blank">http://foliodemo-001.utl.io/utl-admin</a><br>
+				username:  demo<br>
+				password:  n34n5907
+            </p>
+			
+
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+            	Once you've chosen a domain and hosting, we'll migrate everything over to your new home. 
+            </p>
+			
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="text-container">
+			<div style="font-weight:100;font-size:32px;line-height:48px;color:#ffffff;padding-top:39px;padding-bottom:25px;">
+				Hosting Setup
+			</div>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+            	To get Folio up and running you will need to register a domain (ie. yourname.com), and sign up for hosting.  We've chosen a hosting partner that makes this incredibly simple.
+            </p>
+			
+            <p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;color:#aaa;">
+            	Simply visit, the following link and:<br>
+				&nbsp;&mdash; Select "Order Now"<br>
+				&nbsp;&mdash; Choose the "StartUp" plan<br>
+				&nbsp;&mdash; Pick a domain name, and you are ready to go.<br>
+				<br>
+            </p>
+			
+			<p style="text-align: center;"><a href="http://www.siteground.com/wordpress-hosting.htm" target="_blank" onClick="this.href='http://www.siteground.com/wordpress-hosting.htm?afbannercode=18c20a88bef1512db12a1a4c861c3c6c'"><img src="https://ua.siteground.com/img/banners/application/wordpress/250x250.gif" alt="SiteGround Hosting" width="250" height="250" border="0"></a></p>
+			
+		</div>
+	</div>
+	
+	
+	<div class="row" style="margin-top: 80px;">
+		<div class="text-container">
+			<div style="font-weight:100;font-size:32px;line-height:48px;color:#ffffff;padding-top:39px;">
+				Installation Form
+			</div>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+            	Once you are up and running with hosting, input your ftp (sftp) and WordPress credentials into the form below and we will install Folio on your server.
+            </p>
+
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;color:#aaa;">
+            	Your credentials will be encrypted and will never be stored in plaintext.
+            </p>
+		</div>
+		
+		<form id="install_form" action="/installationForm" method="post">
+			<input name="account_token" type="hidden" value="{{account_token}}"> 
+
+
+			<div class="field-container col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+				<input type="text" id="wp_url" autocomplete="off" class="input-taxonomy model-text" placeholder="URL (ie. http://yourdomain.com)"/>
+			</div>
+
+			<div class="field-container col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+				<input type="text" id="wp_user" autocomplete="off" class="input-taxonomy model-text" placeholder="Wordpress Username"/>
+			</div>
+
+			<div class="field-container col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+				<input type="password" id="wp_pass" autocomplete="off" class="input-taxonomy model-text" placeholder="Wordpress Password"/>
+			</div>
+			
+			<div class="field-container col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+				<input type="text" id="sftp_user" autocomplete="off" class="input-taxonomy model-text" placeholder="FTP / SFTP Username"/>
+			</div>
+
+			<div class="field-container col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+				<input type="password" id="sftp_pass" autocomplete="off" class="input-taxonomy model-text" placeholder="FTP / SFTP Password"/>
+			</div>
+			
+			<div class="field-container col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+				<textarea type="text" id="additional_details" class="input-taxonomy model-text" placeholder="Additional Details"></textarea>
+			</div>			
+			
+			
+			<div class="field-container col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+				<div class="notification" style="display: none;"></div>
+				<a id="install-submit" class="button button-personal model-natural" href="#">Submit for Installation</a>
+			</div>
+			
+			
+			<div style="clear: both;">
+		</form>
+		
+		
+		<div class="text-container">
+		</div>
+		
+	</div>
+
+	
+	{% elif install_pending %}
+		
+	<div class="row">
+		<div class="text-container">
+			<div style="font-weight:100;font-size:32px;line-height:48px;color:#ffffff;padding-top:39px;padding-bottom:25px; ">
+				Install request successful - we will follow up with an email once everything has been setup.
+			</div>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+            	Expect a response from us within 1 business day <br> (Monday — Friday PST).
+            </p>
+
+			<div style="color:#FFF;font-size:20px;line-height:24px;font-weight:100;border-top:1px solid #959597;padding-top:44px;">
+            	In the meantime, feel free to upload to the temporary server and we'll migrate everything over to your new home once it's ready. 
+            </p>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;background-color:#444;font-family:monospace;font-size:15px;padding:12px;" bg-color:"#444">
+            	<a href="http://foliodemo-001.utl.io/utl-admin" style="color:#e6fa7e;" target="_blank">http://foliodemo-001.utl.io/utl-admin</a><br>
+				username:  demo<br>
+				password:  n34n5907
+            </p>
+			
+		</div>
+	</div>
+		
+	{% elif install_completed %}
+	
+	<div class="row">
+		<div class="text-container">
+			<div style="font-weight:100;font-size:32px;line-height:48px;color:#ffffff;padding-top:39px;padding-bottom:25px;">
+				Folio is now installed on your personal server.  Go wild.
+			</div>	
+		</div>
+	</div>
+	
+	{% endif %}
+	
+	
+	
+	
+	<div class="row" style="margin-top: 80px; margin-bottom: 120px;">
+		<div class="text-container">
+			<a id="download-collapse" href="#" class="button model-underline" style="font-weight:100;font-size:32px;line-height:48px;color:#e6fa7e; border-bottom: 2px solid #e6fa7e;">
+				Need a Download?
+			</a>
+			
+			<div class="download-section" style="display:none;">
+				<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+	            	Download the Folio plugin and theme for local development.  Full instructions can be found in the README.txt file at the root.
+	            </p>
+
+				<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+					(With most WordPress hosting, this is the package you need)
+	            </p>
+			
+				<div style="border-bottom:1px solid #959597;text-align:center;padding:20px 0 48px;">
+	                <a href="/downloads/folio_plugins_0.1.0_1239847.zip" style="background:#e6fa7e;color:#202020;display:block;font-size:20px;font-weight:500; padding:21px 32px 19px; text-decoration: none; border-radius: 8px">
+	                <span>Download WordPress Plugin Package  (.zip)</span>
+	                </a>
+	            </div>
+
+
+				<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+	            	If you are setting up a DIY system from scratch, download the Bundled WordPress 3.8 package below.
+	            </p>
+			
+				<div style="border-bottom:1px solid #959597;text-align:center;padding:20px 0 48px;">
+	                <a href="/downloads/folio_packaged_0.1.0_1239847.zip" style="background:#e6fa7e;color:#202020;display:block;font-size:20px;font-weight:500; padding:21px 32px 19px; text-decoration: none; border-radius: 8px">
+	                <span>Download Bundled Wordpress 3.8  (.zip)</span>
+	                </a>
+	            </div>
+			
+			</div>
+
+		</div>
+	</div>
+	
+
+
+	<footer id="site-footer">
+		<div class="site-footer-stamp">Made by
+			<a class="button model-underline" href="">
+				<span>Utility</span>
+			</a>
+		</div>
+		<div class="site-footer-trademark">&copy; 2014</div>
+	</footer>
+
+	 <script src='/js/portal.development.js'></script> 
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-47056176-1']);
+	  _gaq.push(['_setDomainName', 'utl.io']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+
+</html>

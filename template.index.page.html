@@ -1,0 +1,762 @@
+<!doctype html>
+<html class='no-js'> 
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Folio</title>
+	<meta name='description' content=''>
+	<meta name=viewport content='width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0' />
+	<meta property="title" content="Folio"/>
+	<meta property="og:title" content="Folio"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="https://folio.utl.io/img/folio_logo.png"/>
+	<meta property="image" content="https://folio.utl.io/img/folio_logo.png"/>
+	<meta property="og:url" content="https://folio.utl.io"/>
+	<meta property="og:description" content="Folio is a self-hosted portfolio website combined with a simple website manager. An all-in-one solution that eliminates the complexity of WordPress."/>
+	<meta property="description" content="Folio is a self-hosted portfolio website combined with a simple website manager. An all-in-one solution that eliminates the complexity of WordPress."/>
+	<link rel="shortcut icon" href="https://folio.utl.io/img/folio_logo.png">
+
+	<link href='css/portal.css' rel='stylesheet' type='text/css'>
+
+	 <!--[if lt IE 9]>
+      	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script src='js/vendor/modernizr.custom.48341.js'></script>
+	<script type="text/javascript">
+	WebFontConfig = { fontdeck: { id: '39545' } }; 
+
+	(function() {
+	  var wf = document.createElement('script');
+	  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+	  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	  wf.type = 'text/javascript';
+	  wf.async = 'true';
+	  var s = document.getElementsByTagName('script')[0];
+	  s.parentNode.insertBefore(wf, s);
+	})();
+	</script>
+	<script src="js/load.js"></script>
+	
+	
+	<style>
+	#scrim {
+		cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='#ffffff' x='0px' y='0px' width='24px' height='36px' viewBox='0 0 12 18' enable-background='new 0 0 12 18'><path fill-rule='evenodd' clip-rule='evenodd' d='M11.5,12.5V13H11v0.5h-0.5V14H10v0.5H9.5V15H9v0.5H8.5V16H8v0.5H7.5V17H7v0.5H6.5 V18h-1v-0.5H5V17H4.5v-0.5H4V16H3.5v-0.5H3V15H2.5v-0.5H2V14H1.5v-0.5H1V13H0.5v-0.5H0v-1h1V12h0.5v0.5H2V13h0.5v0.5H3V14h0.5v0.5H4 V15h0.5v0.5H5V16h0.5V0h1v16H7v-0.5h0.5V15H8v-0.5h0.5V14H9v-0.5h0.5V13H10v-0.5h0.5V12H11v-0.5h1v1H11.5z'/></svg>"), auto;	
+	}
+	</style>
+</head>
+
+<body>
+	
+	<div id="scrim"></div>
+	
+	<script type="text/javascript">
+	//  LOAD mobile or desktop scrim
+	var elem = document.createElement("img");
+	elem.setAttribute("alt", "Folio is a responsive WordPress theme with a modern admin panel in one easy-to-install package.");
+	
+	
+	if ( '{{price_diy}}' == '49' ){
+		if (window.innerWidth > 800){
+			elem.setAttribute("src", "/img/scrim-web-1b-49.png");
+		} else {
+			elem.setAttribute("src", "/img/scrim-phone-1a-49.png");
+		}
+	} else {
+		if (window.innerWidth > 800){
+			elem.setAttribute("src", "/img/scrim-web-1b-24.png");
+		} else {
+			elem.setAttribute("src", "/img/scrim-phone-1a-24.png");
+		}
+	}
+	
+	document.getElementById("scrim").appendChild(elem);
+	</script>
+	
+
+	<header id="site-header" class="state-fixed" style="opacity: 0">
+
+		<a id="menu-purchase" class="button button-buy model-fixed" href="#">Buy Now</a>
+
+		<nav class="navigation left">
+			<ul>
+				<li class="state-active"><a id="menu-folio" class="model-underline" href="#"><span>Folio</span></a></li> 
+				<li><a id="menu-features" class="model-underline" href="#"><span>Features</span></a></li>
+				<li><a id="menu-faq" class="model-underline" href="#"><span>FAQ</span></a></li>
+				<li><a id="menu-contact" class="model-underline" href="#"><span>Contact</span></a></li>
+			</ul>
+		</nav>
+		
+		<div id="back-nav" style="display: none;" class="single-menu state-active">
+			<a class="normal model-underline" href="/">back</a>
+		</div>
+
+	</header>
+
+	<div id="site-root">
+		<div id="site-bulletin" class='site-parent'>
+			<div class="site-bulletin-image">
+
+			<div class="row">
+
+				<div class="browser-container col-phone-12 col-tablet-12 col-laptop-10 col-desktop-12 col-laptop-push-1">
+
+
+						<div class="vert-center-parent">
+						<div class="vert-center-child">
+
+							<section class="product-info col-phone-12 col-tablet-12 col-laptop-10 col-desktop-8 col-laptop-push-1 col-desktop-push-2 col-tablet-push-0">
+
+								<h1 class="product-name">
+									<span>Folio</span><br/>
+									Focus on your work not your website</h1>
+								<a class="product-demo button model-natural hide-for-phone hide-for-tablet" href="/demo/283nan394n3l" target="_blank">Try it now</a>
+							</section>
+
+						 </div>
+						</div>
+
+				</div>
+			</div>
+
+			<div class="icon-container show-for-tablet show-for-phone">
+				<span><i id="title-page-down" class="icon-chevron_down icon2x"></i></span>
+			</div>
+
+			</div>
+			<div class="site-bulletin-overlay"></div>
+		
+		</div>
+		
+		<div class="scroll-to-target"></div>
+
+		<!-- ROW / MOBILE DEMO NOTICE --> 
+		<div class="mobile-demo-notice hide-for-desktop hide-for-laptop">
+			<div class="row">
+				<div class="mobile-demo-container col-phone-10 col-tablet-10 col-laptop-8 col-desktop-8 col-phone-push-1 col-tablet-push-1 col-laptop-push-2 col-desktop-push-2">
+					<p>Folio was built with your phone in mind.</p>
+					<div style="text-align: center">
+						<a class="site-demo button model-natural" href="http://sachahurley.com" target="_blank">Check it out now</a>
+					</div>
+				</div>
+	    	</div>
+	    </div>
+	
+		<!-- ROW / HERO --> 
+		<div class="hero">
+	    	<div class="row">
+				<div class="hero-container col-phone-10 col-tablet-10 col-laptop-8 col-desktop-8 col-phone-push-1 col-tablet-push-1 col-laptop-push-2 col-desktop-push-2">
+					<p>A fresh and minimal portfolio to showcase your work.</p>
+
+					<p>Folio combines a responsive theme with a modern and innovative admin panel in one easy-to-install package. </p>
+				
+					<p>We've added live editing tools and eliminated the complexity of WordPress - leaving you with features that matter.</p>
+				</div>
+	    	</div> 
+	    </div>
+
+		<!-- START / SLAT CONTENT -->
+		<div id="slat-0" class="slat">
+			<header class="slat-header slat-control arrow-down">
+				<div class="row">
+					<section class="slat-header-items vert-center-parent">
+						<article class="vert-center-child">
+							<h3>Features</h3>
+							<a class="button model-natural" href=""><span>close</span></a>
+						</article>
+					</section>
+				</div>
+			</header>
+
+			<!--  BEGIN CONTENT -->
+			<div class="row content">
+				<section class="slat-body col-phone-12 col-tablet-12 col-laptop-12 col-desktop-12">
+					<div class="row">
+						<div id="i-1" class="feature-container first-child state-active col-phone-12 col-tablet-12 col-laptop-12 col-desktop-12">
+							<h4 class="feature-name">Content first</h4>
+							<p class="feature-synopsis col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+								Design that stays out of the way.</p>
+							<div class="feature-image-container full">
+								<img class="feature-image" src="img/folio-feature-contentfirst.png" data-media="img/folio-feature-contentfirst.png" /> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div id="i-2" class="feature-container col-phone-12 col-tablet-12 col-laptop-12 col-desktop-12">
+							<h4 class="feature-name">Live editing</h4>
+							<p class="feature-synopsis col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+								Edit and Add content to your portfolio and see the changes happen live.
+							</p>
+							<div class="feature-image-container full">
+								<img class="feature-image" src="img/folio-feature-liveediting.png" data-media="img/folio-feature-liveediting.png" />
+							</div>
+						</div>
+					</div>
+					<div class="row demo-button hide-for-phone hide-for-tablet">
+						<a class="product-demo button model-natural" href="/demo/283nan394n3l">Try it now</a>
+					</div>
+					<div class="row">
+						<div id="i-3" class="feature-container col-phone-12 col-tablet-12 col-laptop-12 col-desktop-12">
+							<h4 class="feature-name">Simple customization</h4>
+							<p class="feature-synopsis col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+								Change template background and text color easily, no coding needed.
+							</p>
+							<div class="feature-image-container full">
+	
+								<img class="feature-image" src="img/folio-feature-customize.png" data-media="img/folio-feature-customize.png" />
+							</div> 
+						</div>
+					</div>
+					<div class="row">
+						<div id="i-4" class="feature-container state-active col-phone-12 col-tablet-12 col-laptop-12 col-desktop-12">
+							<h4 class="feature-name">Video</h4>
+							<p class="feature-synopsis col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+								Embed Youtube and Vimeo links.
+							</p>
+							<div class="feature-image-container full">
+								<img class="feature-image" src="img/folio-feature-video.png" data-media="img/folio-feature-video.png" /> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div id="i-5" class="feature-container col-phone-12 col-tablet-12 col-laptop-12 col-desktop-12">
+							<h4 class="feature-name">Responsive/mobile</h4>
+							<p class="feature-synopsis col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+								Your stuff automatically looks great on all devices.
+							</p>
+							<div class="feature-image-container full">
+								<img class="feature-image" src="img/folio_feat_05.png" data-media="img/folio_feat_05.png" />
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- END CONTENT --> 
+			<footer class="slat-footer slat-control">
+				<div class="row">
+					<section class="slat-footer-items">
+							<div class="icon-container"><span><i class="icon-arrow_up icon"></i></span></div>
+					</section>
+				</div>
+			</footer>
+		</div>
+ 
+		<!-- START / SLAT CONTENT -->
+		<div id="slat-1" class="slat state-collapsed" data="state-collapsed">
+			<header class="slat-header slat-control arrow-down">
+				<div class="row">
+					<section class="slat-header-items vert-center-parent">
+						<article class="vert-center-child">
+							<h3>Buy Now</h3>
+							<a class="button model-natural" href=""><span>open</span></a>
+						</article>
+					</section>
+				</div>
+			</header>
+			
+			<!-- BEGIN CONTENT -->
+			<div class="row content">
+
+				<section class="slat-body col-phone-12 col-tablet-12 col-laptop-12 col-desktop-10 col-desktop-push-1">
+
+					
+					<div class="stream-container">
+						<div class="stream-items">
+							
+							<section class="stream-item">
+
+									<div class="product-container description hide-for-phone hide-for-tablet col-tablet-12 col-laptop-4 col-desktop-4">
+									<span class="product-price-package"></span>
+									<h4 class="product-price">Folio</h4>
+									<p class="product-includes"><span>One-Time Cost</span></p>
+									<p class="product-includes"><span>Customizer Panel<br/>No coding necessary</span></p>
+									<p class="product-includes"><span>Free Updates</span></p>
+									<p class="product-includes"><span>Mobile Ready</span></p>
+									<p class="product-includes"><span>Retina Optimized</span></p>
+									<p class="product-includes"><span>Expert Install<br/>we do it for you</span></p>
+									<p class="product-includes"><span>Technical Support</span></p>
+									<p class="product-includes"><span>Automated Backups</span></p>
+					   
+								</div>
+
+								<div class="product-container diy col-phone-12 col-tablet-12 col-laptop-4 col-desktop-4" >
+
+									<span class="product-price-package">Downloadable</span>
+									<span class="product-price-package below hide-for-phone hide-for-tablet">Install theme with any WordPress host</span> 
+									<a class="button button-checkout model-natural product-basic product-price-choose-left hide-for-phone hide-for-tablet" href="#">Choose</a>
+									<span class="product-price-arrow hide-for-laptop hide-for-desktop">
+										<i class="icon-arrow_down icon"></i>
+									</span>
+									<h4 class="product-price"><span>{{price_diy}}</span></h4>
+
+									<div class="product-includes-list">
+										<p class="product-includes">
+											<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+											<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> One-Time Cost</span>
+										</p>
+										<p class="product-includes">
+											<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+											<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Customizer Panel, No coding necessary</span>
+										</p>
+										<p class="product-includes">
+											<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+											<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Free Updates</span>
+										</p>
+										<p class="product-includes">
+											<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+											<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Mobile Ready</span>
+										</p>
+										<p class="product-includes">
+											<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+											<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Retina Optimized</span>
+										</p>
+										<p class="product-includes not-included">
+											<span class="hide-for-phone hide-for-tablet"><i class="icon-cross_mark icon"></i></span>
+											<span class="hide-for-laptop hide-for-desktop"><i class="icon-cross_mark icon"></i> Expert Install, we do it for you</span>
+										</p>
+										<p class="product-includes not-included">
+											<span class="hide-for-phone hide-for-tablet"><i class="icon-cross_mark icon"></i></span>
+											<span class="hide-for-laptop hide-for-desktop"><i class="icon-cross_mark icon"></i> Technical Support</span>
+										</p>
+										<p class="product-includes not-included">
+											<span class="hide-for-phone hide-for-tablet"><i class="icon-cross_mark icon"></i></span>
+											<span class="hide-for-laptop hide-for-desktop"><i class="icon-cross_mark icon"></i> Automated Backups</span>
+										</p>
+										
+
+										<a class="button button-checkout model-natural product-basic" href="#">Choose</a>
+									</div>
+					   
+								</div>
+
+
+								<div class="product-container premium col-phone-12 col-tablet-12 col-laptop-4 col-desktop-4" >
+
+									<span class="product-price-package">Premium</span>
+									<span class="product-price-package below hide-for-phone hide-for-tablet">+ $10/mo WordPress hosting. <br> We get you setup</span> 
+									<a class="button button-checkout model-natural product-full product-price-choose-right hide-for-phone hide-for-tablet" href="#">Choose</a>
+									<span class="product-price-arrow hide-for-laptop hide-for-desktop">
+										<i class="icon-arrow_down icon"></i>
+									</span>
+									<h4 class="product-price"><span>{{price_premium}}</span></h4>
+									<div class="product-includes-list">
+									<p class="product-includes">
+										<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+										<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> One-Time Cost</span>
+									</p>
+									<p class="product-includes">
+										<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+										<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Customizer Panel, No coding necessary</span>
+									</p>
+									<p class="product-includes">
+										<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+										<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Free Updates</span>
+									</p>
+									<p class="product-includes">
+										<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+										<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Mobile Ready</span>
+									</p>
+									<p class="product-includes">
+										<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+										<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Retina Optimized</span>
+									</p>
+									<p class="product-includes">
+										<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+										<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Expert Install, we do it for you</span>
+									</p>
+									<p class="product-includes">
+										<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+										<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Technical Support</span>
+									</p>
+									<p class="product-includes">
+										<span class="hide-for-phone hide-for-tablet"><i class="icon-check icon"></i></span>
+										<span class="hide-for-laptop hide-for-desktop"><i class="icon-check icon"></i> Automated Backups.</span>
+									</p>
+									
+									<a class="button button-checkout model-natural product-full" href="#">Choose</a>
+					   				</div>
+								</div>
+								
+								<div style="margin-top: 40px;" class="field-container conditions-container small-text col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+									<p style="text-align: center;">
+										Please read <a class="normal terms-link" href="" target="_blank">Terms of Use</a>.<br>
+										<a class="normal terms-link" href="mailto:info@utl.io" target="_blank">Need bulk licensing?</a><br>
+									</p>
+								</div>
+
+							</section>
+
+
+							
+						</div>
+					</div>
+				</section>
+			</div>
+			<footer class="slat-footer slat-control">
+				<div class="row">
+					<section class="slat-footer-items">
+							<div class="icon-container"><span><i class="icon-arrow_up icon"></i></span></div>
+					</section>
+				</div>
+			</footer>
+		</div>
+
+		<!-- START / SLAT CONTENT -->
+		<div id="slat-2" class="slat">
+			<header class="slat-header slat-control arrow-down">
+				<div class="row">
+					<section class="slat-header-items vert-center-parent">
+						<article class="vert-center-child">
+							<h3>FAQ</h3>
+							<a class="button model-natural" href=""><span>open</span></a>
+						</article> 
+					</section>
+				</div>
+			</header>
+
+			<!--  BEGIN CONTENT -->
+
+			<div class="row content">
+				<section class="slat-body col-phone-12 col-tablet-12 col-laptop-12 col-desktop-12">
+					<!-- FAQ 01 -->
+					<div class="row">
+						<div class="faq-container first-child col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">Does Folio include a domain and hosting?</h4>
+							<p class="faq-synopsis">Folio is a self-hosted application, which allows you to choose your hosting provider. In our premium package we take care of all of this for you.</p>
+						</div>
+					</div>
+					<!-- FAQ 01 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">Does it use WordPress?</h4>
+							<p class="faq-synopsis">Folio is installable as a WordPress theme but we’ve swapped out the overly-complex admin interface with a minimal, tightly-coupled solution. You won’t even know you’re using WordPress.</p>
+						</div>
+					</div>
+					<!-- FAQ 03 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">Why choose a self-hosted solution over monthly portfolio services?</h4>
+							<p class="faq-synopsis">It's your work, you should be able to own every aspect of it.  With Folio your work cannot be censored or filtered and you are never locked in with a single company.</p>
+						</div>
+					</div>
+					<!-- FAQ 01 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">Is there a guide for managing content?</h4>
+							<p class="faq-synopsis">Yes, please download our guided walkthrough <a class="button model-underline" href="/downloads/folio-walkthrough.pdf" target="_blank">PDF</a>.</p>
+						</div>
+					</div>
+					<!-- FAQ 01 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">How will I know when updates are available?</h4>
+							<p class="faq-synopsis">Folio is setup to automatically update to the latest version. Check your update status from the settings page.</p>
+						</div>
+					</div>
+					<!-- FAQ 02 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">How is payment handled?</h4>
+							<p class="faq-synopsis">Payments are made with Stripe and your data is never stored on our servers. They accept all major credit cards.</p>
+						</div>
+					</div>
+					<!-- FAQ 02 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">What about SEO? How do search bots crawl the site?</h4>
+							<p class="faq-synopsis">All works have a unique URL which will allow search engine indexing and direct sharing, for example:
+							<a class="button model-underline" href="http://sachahurley.com/studies_in_decay/" target="_blank">here</a></p>
+						</div>
+					</div>
+					<div class="row demo-button hide-for-phone hide-for-tablet">
+						<a class="product-demo button model-natural" href="">Try it now</a>
+					</div>
+					<!-- FAQ 03 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">I can’t code at all, how much can I change Folio?</h4>
+							<p class="faq-synopsis">Currently, you can change the colours and fonts. We will be adding the capability to add images and logos to the title page shortly</p>
+						</div>
+					</div>
+					<!-- FAQ 03 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">How do I install Folio on WordPress?</h4>
+							<p class="faq-synopsis">It takes less than 30 seconds from the theme manager. <a href="/install_guide" target="_blank" class="button model-underline">View the install guide here</a></p>
+						</div>
+					</div>
+					<!-- FAQ 04 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">How do I measure traffic to my website?</h4>
+							<p class="faq-synopsis">Folio supports Google Analytics integration to give you an overview of all the traffic coming into your portfolio.</p>
+						</div>
+					</div>
+					<!-- FAQ 04 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">Are there bulk licensing options for developers or agencies?</h4>
+							<p class="faq-synopsis">Yes, there are options for affiliates and bulk licensing, <a href="mailto:support@utl.io" target="_blank" class="button model-underline">email us</a> for info on setting up or reselling multiple sites.</p>
+						</div>
+					</div>
+					<!-- FAQ 04 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">What browsers are supported?</h4>
+							<p class="faq-synopsis">Folio has been designed to work with modern browsers, phones, and tablets.  Problems may be encountered on older versions of Internet Explorer.</p>
+						</div>
+					</div>
+					<!-- FAQ 05 -->
+					<div class="row">
+						<div class="faq-container col-phone-12 col-tablet-8 col-laptop-10 col-desktop-8 col-tablet-push-2 col-laptop-push-1 col-desktop-push-2">
+							<h4 class="faq-name">I have a question not answered here…</h4>
+							<p class="faq-synopsis">Simply email us at <a href="mailto:support@utl.io" target="_blank" class="button model-underline">support@utl.io</a> and we’ll be more than happy to answer any questions.</p>
+						</div>
+					</div>
+
+				</section>
+			</div>
+
+			<!-- END CONTENT -->
+			<footer class="slat-footer slat-control">
+				<div class="row">
+					<section class="slat-footer-items">
+							<div class="icon-container"><span><i class="icon-arrow_up icon"></i></span></div>
+					</section>
+				</div>
+			</footer>
+		</div>
+		<!-- ROW / CONTACT --> 
+		<div class="row">
+			<section class="contact">
+				<header class="contact-header">
+					<h2>Utility</h2>
+					<h2>Creative Services</h2>
+					</header>
+				<article class="contact-body">
+					<div class="contact-item col-phone-12 col-tablet-12 col-laptop-12 col-desktop-12">
+						<div class="column-content">
+							<p class="contact-item-local">#328 &mdash; 309 W Cordova St</p>
+							<p class="contact-item-national">Vancouver BC, Canada</p>
+							<a class="contact-item-email button model-underline" href="mailto:info@utl.io"><span>info@utl.io</span></a>
+						</div>
+					</div>
+				</article>
+			</section>       
+		</div>
+
+	<!-- ROW / SUBSCRIBE --> 
+    <div class="row subscribe">
+		<form id="mailer_form" action="/mailer_signup" method="post">
+			<input type="hidden" name="affiliate_name" value="{{affiliate}}">
+			
+	        <div class="field-container col-phone-12 col-tablet-12 col-laptop-12 col-desktop-12">
+	        <div class="row" id="mailer_container">
+	            <div class="col-phone-10 col-tablet-10 col-laptop-4 col-desktop-4 col-phone-push-1 col-laptop-push-3 col-desktop-push-3">
+	                <input type="email" name="email" class="input-taxonomy model-email" placeholder="Sign up for info"/>
+	            </div>
+	            <div class="col-phone-10  col-tablet-10 col-laptop-2 col-desktop-2 col-phone-push-1 col-tablet-push-1">
+	                <a id="mailer-submit" class="button-submit button model-fixed" href="#">Submit</a>
+	            </div>
+	        </div>
+	         <div class="row">
+	            <p id="mailer_notice" class="no-spam">We don't spam.</p></div> 
+	        </div>
+		</form>
+    </div> 
+
+
+	<!-- ROW / TERMS -->  
+	<div class="row terms hide-for-desktop hide-for-laptop">
+		<a class="model-underline normal terms-link" href="#">Terms of Use</a>
+	</div>
+
+	
+	
+	<!--  END SITE ROOT -->
+</div>
+
+
+<!--  PURCHASE FORM ROOT -->
+<div id="purchase-root" style="display: none;">
+	<div id="verification-scrim" style="display: none;">
+		<span class="content">Verifying...</span>
+	</div>
+	
+	
+	<div class="row naked-row">
+		<div id="purchase-container" class="text-container" style="">
+
+			<form id="signup_form" action="/createAccount" method="post">
+				<input id="affiliate_name" type="hidden" name="affiliate_name" value="{{affiliate}}">
+				<input id="price_diy" type="hidden" name="price_diy" value="{{price_diy}}">
+				<input id="price_premium" type="hidden" name="price_premium" value="{{price_premium}}">
+				<input id="price_num" type="hidden" name="price_num" value="{{price_num}}">
+				<input id="product_choice" type="hidden" name="product_choice" value="">
+			
+				<div class="field-container personal-info col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+				<h1 class="field-title">Personal</h1>
+				<input id="signup_name" name="name" type="text" class="input-taxonomy model-text" placeholder="Name" />
+				<input id="signup_email" name="email" type="email" class="input-taxonomy model-text" placeholder="Email" />
+				<input id="confirm_email" type="email" class="input-taxonomy model-email" placeholder="Confirm Email" />
+
+				</div>
+
+				<div class="field-container credit-info col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+					<h1 class="field-title">Credit Card</h1>
+					<input id="card_number" type="text" class="input-taxonomy model-text" placeholder="Card Number" />
+				</div>
+				<div class="field-container col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+					<div class="row expiration-date">
+						<div class="date-month col-phone-12 col-tablet-12 col-laptop-8 col-desktop-8">
+							<div class="column-content" style="padding-left: 0">
+								<input id="mmyy" type="text" class="input-taxonomy model-text" placeholder="Expiry MM/YY" />
+							</div>
+						</div>
+						<div class="date-year col-phone-12 col-tablet-12 col-laptop-4 col-desktop-4">
+							<div class="column-content" style="padding-right: 0;">
+								<input id="cvc" type="text" class="input-taxonomy model-text" placeholder="CVC" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="field-container col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3" style="margin-top: 20px;">
+					<div class="notification" style="display: none;">error / validation notices show here</div>
+					<!-- <a id="submit" class="button button-personal model-fixed" href="#">Purchase</a> -->
+					<a id="submit" class="button button-personal model-fixed" href="#">Purchase DIY &mdash; $199 USD</a>
+
+				</div>
+				
+				<div id="premium-notice" style="display: none;" class="field-container small-text col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+					<p class="highlight">Our premium package gets you rolling with your very own domain name and WordPress server from our hosting partners at <a href="http://easydns.com" class="normal" target="_blank">EasyDNS</a>.</p>
+				</div>
+			
+				<div class="field-container conditions-container small-text col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+					<p>
+						No refunds.<br>
+						Single site license.<br>
+						Subject to <a class="normal terms-link" href="#">Terms of Use</a>.<br>
+						Payments via Stripe.<br>
+					</p>
+					<p><a class="stripe-logo hide-for-phone" href="https://stripe.com" target="_blank"><img src="/img/stripe_logo.png"></a></p>
+				</div>
+				
+		
+			</form>
+		</div>
+	
+
+		<div id="diy-container" style="display: none;">
+			<div class="field-container personal-info col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+				<h1 class="field-title"><span class="highlight">Thank you for purchasing Folio.</span></h1>
+				<h1>Check your email for instructions to download and install.</h1>
+				
+				<br><br>
+				<a class="button button-checkout model-natural close-section" href="#">Close</a>
+			</div>
+		</div>
+		
+		<div id="premium-container" style="display: none;">
+			<div class="field-container personal-info col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+				<h1 class="field-title"><span class="highlight">Thank you for purchasing Folio Premium.</span></h1>
+				<h1>Instructions to get started have been sent to your email.</h1>
+
+				<br><br>
+				<a class="button button-checkout model-natural close-section" href="#">Close</a>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div id="terms-root" style="display: none;">
+	
+	<div class="row naked-row">
+		<div class="field-container conditions-container small-text col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+			<div style="font-weight:100;font-size:32px;line-height:48px;color:#ffffff;padding-top:39px;padding-bottom:25px;">
+				Folio Terms &amp; Conditions
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="row naked-row">
+		<div class="field-container small-text col-phone-12 col-tablet-12 col-laptop-6 col-desktop-6 col-laptop-push-3 col-desktop-push-3">
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+				This End User License Agreement is a binding legal agreement between you and Utility Creative Services, Inc (“UTL”). Purchase, installation or use of any WordPress theme, plugin or extension provided by UTL signifies that you have read, understood, and agreed to be bound by the terms outlined below.
+            </p>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+				<strong>License &amp; Terms of Use</strong>
+			</p>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+				No Refunds. No Warranty.  
+			</p>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+				Older browsers may have difficulty displaying Folio and there is no guarantee that it will work on every single browser and operating system.
+			</p>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+				WordPress automatic updates have been known to create incompatibility issues - we target compatibility with the current version of WordPress only.
+			</p>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+				Folio is provided “as is” with no implied meaning that it will function exactly as you wish or with all 3rd party plugins, components and modules.
+			</p>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+				You may not claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of UTL.
+			</p>
+			
+			<p style="font-size:18px;line-height:28px;font-weight:100;margin-top:28px;margin-bottom:20px;">
+				Terms are subject to change.
+			</p>
+				
+            
+			
+		</div>
+	</div>
+</div>
+ 
+
+
+	<footer id="site-footer">
+		<div class="site-footer-stamp">Made by
+			<a class="button model-underline" href="http://utl.io" target="_blank">
+				<span>Utility</span>
+			</a>
+		</div>
+		
+		<div class="site-footer-terms hide-for-phone hide-for-tablet">
+			<a class="model-underline normal terms-link" href="#">Terms of Use</a>
+		</div>
+		
+		<div class="site-footer-trademark">&copy; 2014</div>
+	</footer>
+
+	<script src='js/portal.development.js'></script>
+	<script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-47056176-1']);
+	  _gaq.push(['_setDomainName', 'utl.io']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+
+</html>
