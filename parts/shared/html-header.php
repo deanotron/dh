@@ -30,19 +30,23 @@
 
 		<link rel="pingback" href="/xmlrpc.php" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.png"/>
-		<link rel='stylesheet' id='screen-css'  href='<?php echo get_stylesheet_directory_uri(); ?>/css/structure.dev.css' type='text/css' media='screen' />
+		
 		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
 		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" />
-		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/custom.modernizr.js'></script> 
 		
-		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Karla:400,700italic,400italic,700' rel='stylesheet' type='text/css'>
 
-		<!--
-		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
-		<?php wp_head(); ?>
-		-->
+		<!-- <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,700"> -->
+		<!-- <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'> -->
+		<link href='<?php echo get_stylesheet_directory_uri(); ?>/css/consulting.css' rel='stylesheet' type='text/css'>
+
+		 <!--[if lt IE 9]>
+	      	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+
+		<script src='<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/modernizr.custom.48341.js'></script>
+
+
 
 		<!-- UTL CONFIG -->
 		<style id="utl-colors" type="text/css"></style>
@@ -53,23 +57,7 @@
 		};
 
 		window.config.UTL_stage_UD_title = "<?php echo get_option('UTL_stage_UD_title'); ?>";
-		window.config.UTL_stage_UD_label = "<?php echo get_option('UTL_stage_UD_label'); ?>";
-		window.config.UTL_stage_BD_title = "<?php echo get_option('UTL_stage_BD_title'); ?>";
-		window.config.UTL_stage_BD_label = "<?php echo get_option('UTL_stage_BD_label'); ?>";
-		window.config.UTL_stage_FM_title = "<?php echo get_option('UTL_stage_FM_title'); ?>";
-		window.config.UTL_stage_FM_label = "<?php echo get_option('UTL_stage_FM_label'); ?>";
-		window.config.UTL_stage_SE_title = "<?php echo get_option('UTL_stage_SE_title'); ?>";
-		window.config.UTL_stage_SE_label = "<?php echo get_option('UTL_stage_SE_label'); ?>";
-		window.config.UTL_stage_C_title = "<?php echo get_option('UTL_stage_C_title'); ?>";
-		window.config.UTL_stage_C_label = "<?php echo get_option('UTL_stage_C_label'); ?>";
-		window.config.UTL_stage_P_title = "<?php echo get_option('UTL_stage_P_title'); ?>";
-		window.config.UTL_stage_P_label = "<?php echo get_option('UTL_stage_P_label'); ?>";
-		window.config.UTL_stage_O_title = "<?php echo get_option('UTL_stage_O_title'); ?>";
-		window.config.UTL_stage_O_label = "<?php echo get_option('UTL_stage_O_label'); ?>";
-		window.config.UTL_stage_F_title = "<?php echo get_option('UTL_stage_F_title'); ?>";
-		window.config.UTL_stage_F_label = "<?php echo get_option('UTL_stage_F_label'); ?>";
-		window.config.UTL_stage_U_title = "<?php echo get_option('UTL_stage_U_title'); ?>";
-		window.config.UTL_stage_U_label = "<?php echo get_option('UTL_stage_U_label'); ?>";
+
 		</script>
 
 

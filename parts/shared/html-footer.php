@@ -1,18 +1,20 @@
-	<div class="title-page utl-color-b utl-color-p"> 
-		<?php if(get_option('UTL_title_logo_image') != ''):?>
-			<div class="centered title-page-logo"><img src="<?php echo get_option('UTL_title_logo_image'); ?>"></div>
-		<?php else: ?>
-	        <div class="centered"><h1><?php bloginfo( 'name' ); ?></h1></div>
-	    <?php endif; ?>
-        <div class="title-page-cover"></div>
-    </div>	
-	<footer class="body-footer">
-	  <nav class="menu-left"><?php echo get_option('UTL_footer_left'); ?></nav>
-  	  <nav class="menu-right"><?php echo get_option('UTL_footer_right'); ?></nav>
+
+	<footer id="site-footer" style="display: none">
+		<div class="site-footer-stamp">Made by
+			<a class="button model-underline" href="http://utl.io" target="_blank">
+				<span>Utility</span>
+			</a>
+		</div>
+		
+		<div class="site-footer-terms hide-for-phone hide-for-tablet">
+			<a class="model-underline normal terms-link" href="#">Terms of Use</a>
+		</div>
+		
+		<div class="site-footer-trademark">&copy; 2014</div>
 	</footer>
-	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/app-grid.dev.js?ver=3.6.1"></script>
+
+	<script src='js/consulting.development.js'></script>
 	<!-- <?php wp_footer(); ?> -->
 
-	<?php echo get_option('UTL_analytics_embed'); ?>
 </body>
 </html>

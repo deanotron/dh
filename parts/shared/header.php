@@ -1,82 +1,21 @@
-<header class="body-header is-fixed is-displayed">
+<header id="site-header" class="state-fixed">
 
-	<div class="container nav-container">
-		<a class="site-title" href="/">
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="57.067px" height="51.533px" viewBox="0 0 57.067 51.533" enable-background="new 0 0 57.067 51.533" xml:space="preserve">
-			<style>
-				
-			</style>
-			<g>
-				<g>
-					<g>
-						<g>
-							<path d="M6.713 51.533c-0.837 0-1.575-0.098-2.212-0.293c-0.636-0.198-1.19-0.458-1.662-0.785 c-0.471-0.329-0.868-0.697-1.189-1.113c-0.324-0.415-0.589-0.84-0.799-1.276c-0.245-0.505-0.437-1.047-0.576-1.624 c-0.139-0.574-0.227-1.191-0.261-1.844l3.35-0.836c0.026 0.5 0.1 1.1 0.2 1.667c0.1 0.6 0.3 1.1 0.5 1.6 c0.249 0.5 0.6 0.9 1 1.238c0.423 0.3 1 0.5 1.6 0.489c1.675 0 2.513-0.836 2.513-2.511 c0-0.419-0.052-0.808-0.158-1.17c-0.104-0.362-0.261-0.712-0.471-1.048c-0.209-0.335-0.47-0.661-0.785-0.981 c-0.314-0.317-0.681-0.646-1.1-0.988l-4.188-3.349C2.089 38.4 1.7 38 1.4 37.578c-0.314-0.432-0.575-0.888-0.785-1.367 c-0.209-0.48-0.364-0.97-0.464-1.465C0.051 34.2 0 33.8 0 33.266c0-0.749 0.127-1.468 0.38-2.152 c0.253-0.684 0.625-1.287 1.118-1.806c0.493-0.52 1.105-0.933 1.839-1.238c0.733-0.303 1.578-0.456 2.539-0.456 c0.819 0 1.5 0.1 2.2 0.262c0.638 0.2 1.2 0.4 1.7 0.693c0.475 0.3 0.9 0.6 1.2 1 c0.327 0.4 0.6 0.7 0.8 1.112c0.244 0.5 0.4 0.9 0.6 1.444c0.136 0.5 0.2 1 0.3 1.604l-3.35 0.8 c-0.026-0.427-0.089-0.885-0.19-1.372c-0.1-0.491-0.274-0.943-0.524-1.362c-0.248-0.419-0.584-0.764-1.007-1.042 c-0.424-0.273-0.967-0.411-1.629-0.411c-0.446 0-0.827 0.069-1.145 0.203c-0.319 0.137-0.579 0.321-0.778 0.6 c-0.201 0.235-0.351 0.507-0.446 0.816c-0.096 0.311-0.144 0.635-0.144 0.977c0 0.6 0.1 1.2 0.4 1.7 c0.275 0.6 0.7 1.1 1.3 1.564l4.188 3.348c0.532 0.4 1 0.9 1.4 1.407c0.415 0.5 0.8 1 1.1 1.6 c0.288 0.6 0.5 1.1 0.7 1.721c0.148 0.6 0.2 1.2 0.2 1.746c0 0.723-0.118 1.416-0.353 2.1 c-0.236 0.657-0.596 1.241-1.08 1.746c-0.484 0.506-1.093 0.909-1.826 1.21C8.584 51.4 7.7 51.5 6.7 51.533z" class="style-kts-svg"/>
-							<path d="M26.587 40.413h-5.863v10.884h-3.35V27.849h3.35v10.049h5.863V27.849h3.349v23.447h-3.349V40.413z" class="style-kts-svg"/>
-							<path d="M36.751 27.849h3.35v18.424h-2.512L36.751 27.849z M36.751 47.948h3.35v3.349h-3.35V47.948z" class="style-kts-svg"/>
-							<path d="M56.599 27.849v2.983h-4.187v20.464h-3.351V30.832h-4.188v-2.983H56.599z" class="style-kts-svg"/>
-						</g>
-					</g>
-					<path d="M51.205 23.921c-0.837 0-1.575-0.098-2.212-0.294c-0.636-0.197-1.19-0.458-1.662-0.786 c-0.472-0.329-0.868-0.698-1.189-1.113c-0.324-0.415-0.59-0.841-0.8-1.276c-0.245-0.506-0.436-1.048-0.576-1.623 c-0.139-0.575-0.227-1.191-0.261-1.843l3.35-0.838c0.026 0.5 0.1 1.1 0.2 1.667c0.1 0.6 0.3 1.1 0.5 1.6 c0.249 0.5 0.6 0.9 1 1.236c0.423 0.3 1 0.5 1.6 0.489c1.675 0 2.513-0.837 2.513-2.511 c0-0.418-0.053-0.809-0.158-1.17c-0.105-0.363-0.262-0.711-0.471-1.048c-0.209-0.336-0.471-0.664-0.784-0.981 c-0.314-0.317-0.682-0.646-1.1-0.988l-4.188-3.351c-0.436-0.34-0.812-0.725-1.125-1.156c-0.314-0.432-0.576-0.888-0.785-1.368 c-0.209-0.482-0.363-0.969-0.464-1.466c-0.1-0.499-0.151-0.99-0.151-1.479c0-0.75 0.126-1.466 0.38-2.152 c0.253-0.685 0.625-1.287 1.118-1.806c0.493-0.52 1.107-0.931 1.839-1.238C48.562 0.2 49.4 0 50.4 0 c0.82 0 1.5 0.1 2.2 0.262c0.638 0.2 1.2 0.4 1.7 0.695c0.475 0.3 0.9 0.6 1.2 1 c0.326 0.4 0.6 0.7 0.8 1.113c0.245 0.5 0.4 0.9 0.6 1.445c0.135 0.5 0.2 1 0.3 1.604l-3.349 0.8 c-0.026-0.426-0.091-0.884-0.191-1.372c-0.1-0.49-0.274-0.943-0.523-1.361c-0.248-0.417-0.583-0.764-1.007-1.041 c-0.424-0.274-0.967-0.413-1.629-0.413c-0.445 0-0.827 0.068-1.146 0.203c-0.319 0.136-0.578 0.322-0.777 0.6 c-0.201 0.236-0.35 0.509-0.446 0.82c-0.096 0.308-0.144 0.633-0.144 0.974c0 0.6 0.1 1.2 0.4 1.7 c0.275 0.6 0.7 1.1 1.3 1.564l4.188 3.352c0.531 0.4 1 0.9 1.4 1.406c0.414 0.5 0.8 1 1.1 1.6 c0.288 0.6 0.5 1.1 0.7 1.721c0.148 0.6 0.2 1.2 0.2 1.747c0 0.726-0.118 1.416-0.352 2.1 c-0.237 0.658-0.597 1.239-1.081 1.748c-0.484 0.507-1.093 0.91-1.825 1.21C53.076 23.8 52.2 23.9 51.2 23.921z" class="style-kts-svg"/>
-					<path d="M26.587 12.798h-5.863v10.889h-3.35V0.236h3.35v10.05h5.863V0.236h3.349v23.451h-3.349V12.798z" class="style-kts-svg"/>
-					<path d="M36.368 0.236h3.35V18.66h-2.512L36.368 0.236z M36.368 20.334h3.35v3.353h-3.35V20.334z" class="style-kts-svg"/>
-					<path d="M11.725 0.236v2.983H7.538v20.468h-3.35V3.219H0V0.236H11.725z" class="style-kts-svg"/>
-				</g>
-			</g>
-			</svg>
-		</a>
-
-		<?php wp_nav_menu( array( 'measure_kts' => 'kts-menu' ) ); ?>
-
-
-		<div class="measure-container standard">
-			<span class="measure-logo">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="31.924px" height="33.065px" viewBox="0 0 31.924 33.065" enable-background="new 0 0 31.924 33.065" xml:space="preserve">
-					<g>
-						<path d="M0 0v23.563l15.962 9.501l15.962-9.501V0H0z M25.468 21.083H6.461v-4.544h19.007V21.083z M25.468 10.9 H6.461V6.374h19.007V10.935z" class="style-measure-svg"/>
-					</g>
-					</svg>
-			</span>
-			<a href="http://wearemeasure.com" alt="Powered by Measure">Powered by Measure</a>
-		</div>
-
-
-
-		<div class="mobile-menu-toggle">
-			<span class="menu-open">
-				<svg id="menu-icon" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="44.562px" height="39.761px" viewBox="0 0 44.562 39.761" enable-background="new 0 0 44.562 39.761" xml:space="preserve">
-				<switch>
-					<foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1">
-						</foreignObject>
-					<g i:extraneous="self">
-						<g>
-							<path d="M0,2.88C0,1.28,1.28,0,2.88,0h38.8c1.601,0,2.881,1.28,2.881,2.88s-1.28,2.88-2.881,2.88H2.88C1.28,5.76,0,4.48,0,2.88z      M44.562,19.92c0,1.521-1.28,2.88-2.881,2.88H2.88C1.28,22.8,0,21.441,0,19.92c0-1.601,1.28-2.88,2.88-2.88h38.8     C43.281,17.041,44.562,18.32,44.562,19.92z M44.562,36.88c0,1.6-1.28,2.881-2.881,2.881H2.88C1.28,39.761,0,38.48,0,36.88     S1.28,34,2.88,34h38.8C43.281,34,44.562,35.281,44.562,36.88z"/>
-						</g>
-					</g>
-				</switch>
-				</svg>
-			</span>
-			<span class="menu-close">
-				<svg id="close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-					<path d="M98.169,89.331L58.838,50l39.331-39.331c2.441-2.441,2.441-6.396,0-8.838c-2.439-2.441-6.396-2.441-8.838,0   L50,41.162L10.669,1.831c-2.439-2.441-6.396-2.441-8.838,0c-2.441,2.437-2.441,6.396,0,8.838L41.162,50L1.831,89.331   c-2.441,2.441-2.441,6.396,0,8.838c2.441,2.441,6.396,2.441,8.838,0L50,58.838l39.331,39.331c2.441,2.441,6.399,2.441,8.838,0   C100.61,95.728,100.61,91.773,98.169,89.331z"/>
-				</svg>
-			</span>
-		</div>
-		<div class="mobile-menu-container">
-			<?php wp_nav_menu( array( 'measure_kts' => 'kts-menu' ) ); ?>
-
-			<div class="measure-container mobile">
-				<span class="measure-logo">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="31.924px" height="33.065px" viewBox="0 0 31.924 33.065" enable-background="new 0 0 31.924 33.065" xml:space="preserve">
-					<g>
-						<path d="M0 0v23.563l15.962 9.501l15.962-9.501V0H0z M25.468 21.083H6.461v-4.544h19.007V21.083z M25.468 10.9 H6.461V6.374h19.007V10.935z" class="style-measure-svg"/>
-					</g>
-					</svg>
-				</span>
-				<a href="http://measureaccounting.com" alt="Powered by Measure">Powered by Measure</a>
-			</div>
-		</div>
+	<nav class="navigation left">
+		<ul>
+			<li class="state-active"><a id="menu-home" class="model-underline" href="#"><span>Dean Halford</span></a></li> 
+			<!-- <li><a id="menu-contact" class="model-underline" href="#"><span>Contact</span></a></li> -->
+		</ul>
+	</nav>
+	
+	<nav class="navigation right">
+		<a id="menu-linkedin" class="button model-fixed social-media" href="#">LI</a>
+		<a id="menu-twitter" class="button model-fixed social-media" href="#">TW</a>
+	</nav>
+	
+	<div id="back-nav" style="display: none;" class="single-menu state-active">
+		<a class="normal model-underline" href="/">back</a>
 	</div>
+
 </header>
 
-<div class="primary">
 <!-- === START WRAPPER === -->
